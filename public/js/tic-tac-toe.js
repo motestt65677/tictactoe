@@ -64,14 +64,14 @@
 
 		if(checkWin(botState) == true){
 			gameOver = true;
-			alert("player 2 wins");
+			gameState.innerHTML = "Player 2 Wins";
 			return;
 		}	
 
 		if(checkTie(player1State, botState) == true){
-					alert("Tie Game!!");
-					gameOver = true;
-					return;
+			gameState.innerHTML = "Tie Game!!";
+			gameOver = true;
+			return;
 		}	
 	}
 
@@ -96,7 +96,7 @@
 
 		if(checkWin(player1State) == true){
 			gameOver = true;
-			gameState.innerHTML = "player 1 wins";
+			gameState.innerHTML = "Player 1 Wins";
 			return;
 		}
 
@@ -127,7 +127,7 @@
 			playerTurn = 2;
 			if(checkWin(player1State) == true){
 				gameOver = true;
-				gameState.innerHTML = "player 1 wins";
+				gameState.innerHTML = "Player 1 Wins";
 				return;
 			}
 		}else {
@@ -137,7 +137,7 @@
 			playerTurn = 1;
 			if(checkWin(player2State) == true){
 				gameOver = true;
-				gameState.innerHTML = "player 2 wins";
+				gameState.innerHTML = "Player 2 Wins";
 				return;
 			}
 		}
@@ -187,7 +187,7 @@
 	}
 
 	function reset(event){
-		gameState.innerHTML = "Player 1's turn";
+		gameState.innerHTML = "Player 1's Turn";
 		gameOver = false;
 		player1State = [];
 		player2State = [];
