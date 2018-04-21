@@ -151,28 +151,28 @@
 
 	function checkEmpty(div, player1, player2){
 
-		if(player1.includes(div) || player2.includes(div)){
+		if(player1.indexOf(div) > -1 || player2.indexOf(div) > -1){
 			return true;	
 		}
 		return false;
 	}
 
 	function checkWin(player){
-		if(player.includes('1') && player.includes('2') && player.includes('3')){
+		if(player.indexOf('1') > -1 && player.indexOf('2') > -1 && player.indexOf('3') > -1){
 			return true;
-		}else if(player.includes('4') && player.includes('5') && player.includes('6')){
+		}else if(player.indexOf('4') > -1 && player.indexOf('5') > -1 && player.indexOf('6') > -1){
 			return true;
-		}else if(player.includes('7') && player.includes('8') && player.includes('9')){
+		}else if(player.indexOf('7') > -1 && player.indexOf('8') > -1 && player.indexOf('9') > -1){
 			return true;
-		}else if(player.includes('1') && player.includes('4') && player.includes('7')){
+		}else if(player.indexOf('1') > -1 && player.indexOf('4') > -1 && player.indexOf('7') > -1){
 			return true;
-		}else if(player.includes('2') && player.includes('5') && player.includes('8')){
+		}else if(player.indexOf('2') > -1 && player.indexOf('5') > -1 && player.indexOf('8') > -1){
 			return true;
-		}else if(player.includes('3') && player.includes('6') && player.includes('9')){
+		}else if(player.indexOf('3') > -1 && player.indexOf('6') > -1 && player.indexOf('9') > -1){
 			return true;
-		}else if(player.includes('1') && player.includes('5') && player.includes('9')){
+		}else if(player.indexOf('1') > -1 && player.indexOf('5') > -1 && player.indexOf('9') > -1){
 			return true;
-		}else if(player.includes('3') && player.includes('5') && player.includes('7')){
+		}else if(player.indexOf('3') > -1 && player.indexOf('5') > -1 && player.indexOf('7') > -1){
 			return true;
 		}
 		return false;
