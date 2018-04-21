@@ -59,7 +59,7 @@
 		// console.log(botRemainState);
 
 		botState.push(selectDiv);
-		myDivs[botChoice-1].style.backgroundImage = "url(pictures/x.png)";	
+		myDivs[botChoice-1].style.backgroundImage = "url(images/x.png)";	
 		gameState.innerHTML = "Player 1's Turn";						
 
 		if(checkWin(botState) == true){
@@ -91,7 +91,7 @@
 		// console.log(selectDiv);
 		// console.log(botRemainState);
 
-		event.target.style.backgroundImage = "url(pictures/circle.png)";
+		event.target.style.backgroundImage = "url(images/circle.png)";
 		gameState.innerHTML = "Player 2's Turn";
 
 		if(checkWin(player1State) == true){
@@ -121,7 +121,7 @@
 
 		if(playerTurn == 1){
 			player1State.push(selectDiv);
-			event.target.style.backgroundImage = "url(pictures/circle.png)";
+			event.target.style.backgroundImage = "url(images/circle.png)";
 			gameState.innerHTML = "Player 2's Turn";
 			playerTurn = 2;
 			if(checkWin(player1State) == true){
@@ -131,7 +131,7 @@
 			}
 		}else {
 			player2State.push(selectDiv);			
-			event.target.style.backgroundImage = "url(pictures/x.png)";		
+			event.target.style.backgroundImage = "url(images/x.png)";		
 			gameState.innerHTML = "Player 1's Turn";						
 			playerTurn = 1;
 			if(checkWin(player2State) == true){
