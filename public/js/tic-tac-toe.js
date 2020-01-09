@@ -15,8 +15,6 @@
 	let botRemainState = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
 	let botChoice = "";
 
-	console.log(singleButton);
-	console.log(doubleButton);
 
 	singleButton.onclick = function(){
 		gameMode = "single";
@@ -33,7 +31,6 @@
 	function pickMode(){
 		if (gameMode == "single"){
 			reset();
-			console.log(gameMode);
 			for(i=0; i<myDivs.length; i++){
 				singleButton.style.border = "5px solid white";
 				doubleButton.style.border = "";
@@ -210,3 +207,5 @@
 			}
 		});
 	}
+
+
